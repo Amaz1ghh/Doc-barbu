@@ -1,0 +1,8 @@
+#!/bin/bash
+<?php
+docker create volume sae103;
+docker image pull clock
+docker container run clock
+docker run -d --name sae103-forever -v sae103:/chemin/du/volume clock:latest
+
+?>
